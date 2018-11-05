@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trivia Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+
+
+
+
+</head>
+
+<body>
+
+    <h1>Triva Game!!</h1>
+    <button id=start>Start</button>
+    <div id = "show-number"></div>
+
+    <div id="welcomeDiv"  style="display:none;" class="answer_list" > 
+    
+        <div id=question1>
+            <h1>The sky is blue</h1>
+            <form>
+                <input type="radio" name="choice" value="correct"> true
+                <input type="radio" name="choice" value="incorrect"> false
+
+            </form>
+        </div>
+        <div id=question2>
+            <h1>Bananas are vegetables.</h1>
+            <form>
+                <input type="radio" name="choice" value="incorrect"> true
+                <input type="radio" name="choice" value="correct"> false
+
+            </form>
+        </div>
+        <div id=question3>
+            <h1>There are 42 ounces in a pound.</h1>
+            <form>
+                <input type="radio" name="choice" value="incorrect"> true
+                <input type="radio" name="choice" value="correct"> false
+
+            </form>
+        </div>
+        <div id=question4>
+            <h1>here are 365 days in a year.</h1>
+            <form>
+                <input type="radio" name="choice" value="correct"> true
+                <input type="radio" name="choice" value="incorrect"> false
+
+            </form>
+        </div>
+        <div id=question5>
+            <h1>The Declaration of Independence was created in 1745.</h1>
+            <form>
+                <input type="radio" name="choice" value="correct"> true
+                <input type="radio" name="choice" value="incorrect"> false
+
+            </form>
+        </div>
+            
+        <button id=submit>Submit Quiz</button>
+    </div>
+
+ <!--  <input type="button" name="answer" value="Show Div" onclick="run()" /> -->
+
+        
+            
+
+            
+
+
+    <!--JQUERY-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="assets/javascript/app.js"></script> 
+
+
+</body>
+</html>
