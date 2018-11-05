@@ -45,7 +45,36 @@ function endPage(){
     $("#unanswered").html("Correct: " + unansweredQuestions);
 
 }
-
+/*
+function submitAnswer() {
+    var radios = document.getElementsByName("choice");
+    var i = 0, len = radios.length;
+    var checked = false;
+    var userAnswer;
+    
+    for( ; i < len; i++ ) {
+       if(radios[i].checked) {
+         checked = true;
+         userAnswer = radios[i].value;
+       }
+    } 
+    // if user click submit button without selecting any option, alert box should be say "please select choice answer".
+    if(!checked) {
+      alert("please select choice answer");
+      return;
+    }
+    // Correct answer
+    if(userAnswer === "correct") {
+        correctQuestions++;
+        console.log(correctQuestions);
+    }
+    // incorrect answer
+    else {
+        incorrectQuestions++;
+        console.log(incorrectQuestions)
+    }
+    
+  }
 //reset game
 
 //end game --> you lose/win 
@@ -54,4 +83,4 @@ function endPage(){
 
 //make answer choices buttons? / choose the right button? 
 
-//update score
+//update score */
