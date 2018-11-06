@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Trivia Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
 
 
@@ -14,52 +19,61 @@
 
 <body>
 
-    <h1>Triva Game!!</h1>
+    <header>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Trivia Game</h1>
+                <p class="lead">Answer these questions before the timer runs out!</p>
+            </div>
+        </div>    
+    </header>
+
     <button id=start>Start</button>
     <div id = "show-number"></div>
 
     <div id="welcomeDiv"  style="display:none;" class="answer_list" > 
     
         <div id=question1>
-            <h1>The sky is blue</h1>
+            <h2>The sky is blue</h2>
             <form>
-                <input type="radio" name="choice" value="correct"> true
-                <input type="radio" name="choice" value="incorrect"> false
+                <input type="radio" name="0" value="correct"> True
+                <input type="radio" name="0" value="incorrect"> False
 
             </form>
         </div>
         <div id=question2>
-            <h1>Bananas are vegetables.</h1>
+            <h2>Bananas are vegetables.</h2>
             <form>
-                <input type="radio" name="choice" value="incorrect"> true
-                <input type="radio" name="choice" value="correct"> false
+                <input type="radio" name="1" value="incorrect"> True
+                <input type="radio" name="1" value="correct"> False
 
             </form>
         </div>
         <div id=question3>
-            <h1>There are 42 ounces in a pound.</h1>
+            <h2>There are 42 ounces in a pound.</h2>
             <form>
-                <input type="radio" name="choice" value="incorrect"> true
-                <input type="radio" name="choice" value="correct"> false
+                <input type="radio" name="2" value="incorrect"> True
+                <input type="radio" name="2" value="correct"> False
 
             </form>
         </div>
         <div id=question4>
-            <h1>here are 365 days in a year.</h1>
+            <h2>There are 365 days in a year.</h2>
             <form>
-                <input type="radio" name="choice" value="correct"> true
-                <input type="radio" name="choice" value="incorrect"> false
+                <input type="radio" name="3" value="correct"> True
+                <input type="radio" name="3" value="incorrect"> False
 
             </form>
         </div>
         <div id=question5>
-            <h1>The Declaration of Independence was created in 1745.</h1>
+            <h2>The Declaration of Independence was created in 1745.</h2>
             <form>
-                <input type="radio" name="choice" value="correct"> true
-                <input type="radio" name="choice" value="incorrect"> false
+                <input type="radio" name="4" value="correct"> True
+                <input type="radio" name="4" value="incorrect"> False
 
             </form>
         </div>
+        <br>
             
         <button onclick="submitAnswer()">Submit Answer</button> 
         </div>
